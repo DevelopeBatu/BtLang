@@ -1,4 +1,4 @@
-from bat_lang import *
+from BtLang import *
 from sys import *
 
 filename = argv[1]
