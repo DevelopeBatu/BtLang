@@ -1,1 +1,26 @@
-print("g")
+from builtins import *
+import js2py
+
+
+def Write(*data):
+    st = ''.join(map(str,data))
+    print(st)
+
+def Input(*data):
+    st = ''.join(map(str, data))
+    sonuc = input(st)
+    return sonuc
+
+def JsRun(data, par):
+    result = js2py.eval_js(data)
+    print(result(par))
+
+def JsRun(data):
+    result = js2py.eval_js(data)
+
+
+def Error(*data):
+    st = ''.join(map(str, data))
+    raise Exception(st)
+
+
